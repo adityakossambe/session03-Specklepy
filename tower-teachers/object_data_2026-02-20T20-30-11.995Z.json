@@ -1,0 +1,413 @@
+{
+  "projectId": "128262a20c",
+  "objectId": "169b2af26d766841de31c538a3ba491b",
+  "data": {
+    "id": "169b2af26d766841de31c538a3ba491b",
+    "name": "Random Box",
+    "elements": [
+      {
+        "id": "ad4f1eef21da1e8ee10250f086e5467d",
+        "area": 60000,
+        "units": "mm",
+        "xSize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "ySize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "zSize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "volume": 1000000,
+        "basePlane": {
+          "id": "7bcf148e18fbd70436b5d442c6e271b3",
+          "xdir": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "id": "44b9a68e033ccaa9560134371d70466f",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "ydir": {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "id": "2b216a01c68fb2500095d056e470aa00",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "units": "mm",
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "id": "d382b45373cea85ef3feb6e7d4df001d",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "origin": {
+            "x": 171.01469735177886,
+            "y": 121.33824176405426,
+            "z": -197.01835913391108,
+            "id": "1fd870553c1a1a1aa9d5ae0516a7c1cc",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Point",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "speckle_type": "Objects.Geometry.Plane",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "speckle_type": "Objects.Geometry.Box",
+        "applicationId": null,
+        "totalChildrenCount": 0
+      },
+      {
+        "id": "10f363ee3f31bdf656edf2ec2b5f2ff1",
+        "area": 60000,
+        "units": "mm",
+        "xSize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "ySize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "zSize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "volume": 1000000,
+        "basePlane": {
+          "id": "7aa2cabf60a0adb7c7a68e1e654aac41",
+          "xdir": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "id": "44b9a68e033ccaa9560134371d70466f",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "ydir": {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "id": "2b216a01c68fb2500095d056e470aa00",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "units": "mm",
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "id": "d382b45373cea85ef3feb6e7d4df001d",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "origin": {
+            "x": 483.20466299470445,
+            "y": 142.63960148720093,
+            "z": 159.10127440217593,
+            "id": "4790836e5dadcfb723b5f430b6b1efaf",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Point",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "speckle_type": "Objects.Geometry.Plane",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "speckle_type": "Objects.Geometry.Box",
+        "applicationId": null,
+        "totalChildrenCount": 0
+      },
+      {
+        "id": "81860dc58d3bf9c42d57bbbd4ec96b11",
+        "area": 60000,
+        "units": "mm",
+        "xSize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "ySize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "zSize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "volume": 1000000,
+        "basePlane": {
+          "id": "db40a8afd5b06564fb2b6052300cda4c",
+          "xdir": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "id": "44b9a68e033ccaa9560134371d70466f",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "ydir": {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "id": "2b216a01c68fb2500095d056e470aa00",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "units": "mm",
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "id": "d382b45373cea85ef3feb6e7d4df001d",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "origin": {
+            "x": -471.66371039086187,
+            "y": -357.780267730127,
+            "z": -327.8878975358096,
+            "id": "b15360a56e0d90013537064ed901d1b2",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Point",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "speckle_type": "Objects.Geometry.Plane",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "speckle_type": "Objects.Geometry.Box",
+        "applicationId": null,
+        "totalChildrenCount": 0
+      },
+      {
+        "id": "084e46a7ac498000c3c857d6fc113a12",
+        "area": 60000,
+        "units": "mm",
+        "xSize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "ySize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "zSize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "volume": 1000000,
+        "basePlane": {
+          "id": "2ea750794585a15cf2904b8b6792c60d",
+          "xdir": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "id": "44b9a68e033ccaa9560134371d70466f",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "ydir": {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "id": "2b216a01c68fb2500095d056e470aa00",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "units": "mm",
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "id": "d382b45373cea85ef3feb6e7d4df001d",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "origin": {
+            "x": -331.3449044673905,
+            "y": 434.23097776216616,
+            "z": 265.8257337782427,
+            "id": "5313e2dcfcce71ea959bdceaf8746503",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Point",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "speckle_type": "Objects.Geometry.Plane",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "speckle_type": "Objects.Geometry.Box",
+        "applicationId": null,
+        "totalChildrenCount": 0
+      },
+      {
+        "id": "4064fe8adb950dcde35f96651e776368",
+        "area": 60000,
+        "units": "mm",
+        "xSize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "ySize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "zSize": {
+          "id": "d9aa6b3d5d32f21a1a3602c441332265",
+          "end": 50,
+          "start": -50,
+          "speckle_type": "Objects.Primitive.Interval",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "volume": 1000000,
+        "basePlane": {
+          "id": "d2d534bcdcb809783b2308ef78d399ce",
+          "xdir": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "id": "44b9a68e033ccaa9560134371d70466f",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "ydir": {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "id": "2b216a01c68fb2500095d056e470aa00",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "units": "mm",
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "id": "d382b45373cea85ef3feb6e7d4df001d",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Vector",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "origin": {
+            "x": -301.87446620648836,
+            "y": -494.9161162422352,
+            "z": -184.02006106623446,
+            "id": "5a9fe3c22f97ed7fa5cf78bb8f849d71",
+            "units": "mm",
+            "speckle_type": "Objects.Geometry.Point",
+            "applicationId": null,
+            "totalChildrenCount": 0
+          },
+          "speckle_type": "Objects.Geometry.Plane",
+          "applicationId": null,
+          "totalChildrenCount": 0
+        },
+        "speckle_type": "Objects.Geometry.Box",
+        "applicationId": null,
+        "totalChildrenCount": 0
+      }
+    ],
+    "speckle_type": "Base",
+    "applicationId": null,
+    "totalChildrenCount": 0
+  }
+}
