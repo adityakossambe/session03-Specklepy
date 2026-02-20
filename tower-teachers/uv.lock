@@ -712,12 +712,14 @@ name = "tower-teachers"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "gql" },
     { name = "python-dotenv" },
     { name = "specklepy" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "gql", specifier = ">=3.5.3" },
     { name = "python-dotenv", specifier = ">=1.0.0" },
     { name = "specklepy", specifier = ">=3.2.3" },
 ]
