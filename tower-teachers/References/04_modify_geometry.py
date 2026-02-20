@@ -10,21 +10,21 @@ Use this model: https://app.speckle.systems/projects/YOUR_PROJECT_ID/models/YOUR
 
 import copy
 from main import get_client
-from specklepy.transports.server import ServerTransport
 from specklepy.api import operations
 from specklepy.objects.base import Base
+from specklepy.transports.server import ServerTransport
 
 
 # TODO: Replace with your project and model IDs
-PROJECT_ID = "YOUR_PROJECT_ID"
-MODEL_ID = "YOUR_MODEL_ID"
+PROJECT_ID = "128262a20c"
+MODEL_ID = "f9f812034b"
 
 # TODO: Replace with the applicationId of an object to duplicate
-TARGET_APPLICATION_ID = "YOUR_APPLICATION_ID"
+TARGET_APPLICATION_ID = "7b26f0af-2fb5-49b6-9486-403c3ae03082"
 
 # Offset for the duplicated object (move to the right = positive X)
 # Note: The model uses millimeters, so 50 meters = 50000 mm
-OFFSET_X = 50000.0
+OFFSET_Z = 16000.0
 
 
 def find_object_by_application_id(obj, target_id: str):
@@ -48,9 +48,9 @@ def find_object_by_application_id(obj, target_id: str):
     return None
 
 
-def deep_copy_and_offset(obj, offset_x: float):
+def deep_copy_and_offset(obj, offset_z: float):
     """
-    Create a deep copy of a Speckle object and offset its geometry in X direction.
+    Create a deep copy of a Speckle object and offset its geometry in Z direction.
     """
     # Serialize to dict and deserialize to create a copy
     from specklepy.serialization.base_object_serializer import BaseObjectSerializer
@@ -75,51 +75,51 @@ def deep_copy_and_offset(obj, offset_x: float):
     new_obj.applicationId = str(uuid.uuid4())
     
     # Offset geometry - check for common geometry patterns
-    offset_geometry(new_obj, offset_x)
+    offset_geometry(new_obj, offset_z)
     
     return new_obj
 
 
-def offset_geometry(obj, offset_x: float):
+def offset_geometry(obj, offset_z: float):
     """
-    Offset geometry in the X direction for various geometry types.
+    Offset geometry in the Z direction for various geometry types.
     """
     # Handle displayValue (common in Revit objects)
     display_value = getattr(obj, "displayValue", None) or getattr(obj, "@displayValue", None)
     if display_value:
         if isinstance(display_value, list):
             for mesh in display_value:
-                offset_mesh_vertices(mesh, offset_x)
+                offset_mesh_vertices(mesh, offset_z)
         else:
-            offset_mesh_vertices(display_value, offset_x)
+            offset_mesh_vertices(display_value, offset_z)
     
     # Handle direct vertices (for Mesh objects)
     if hasattr(obj, "vertices") and obj.vertices:
-        offset_mesh_vertices(obj, offset_x)
+        offset_mesh_vertices(obj, offset_z)
     
     # Handle base point / location
     if hasattr(obj, "basePoint"):
         bp = obj.basePoint
-        if hasattr(bp, "x"):
-            bp.x += offset_x
+        if hasattr(bp, "z"):
+            bp.z += offset_z
     
     if hasattr(obj, "location"):
         loc = obj.location
-        if hasattr(loc, "x"):
-            loc.x += offset_x
+        if hasattr(loc, "z"):
+            loc.z += offset_z
 
 
-def offset_mesh_vertices(mesh, offset_x: float):
+def offset_mesh_vertices(mesh, offset_z: float):
     """
-    Offset mesh vertices in the X direction.
+    Offset mesh vertices in the Z direction.
     Vertices are stored as flat list: [x1, y1, z1, x2, y2, z2, ...]
     """
     if hasattr(mesh, "vertices") and mesh.vertices:
         new_vertices = []
         for i in range(0, len(mesh.vertices), 3):
-            new_vertices.append(mesh.vertices[i] + offset_x)  # x + offset
-            new_vertices.append(mesh.vertices[i + 1])          # y
-            new_vertices.append(mesh.vertices[i + 2])          # z
+            new_vertices.append(mesh.vertices[i] )                  # x 
+            new_vertices.append(mesh.vertices[i + 1])               # y
+            new_vertices.append(mesh.vertices[i + 2] + offset_z)    # z + offset
         mesh.vertices = new_vertices
 
 
@@ -152,9 +152,8 @@ def main():
     print(f"  Type: {getattr(target_obj, 'speckle_type', 'Unknown')}")
     
     # Create a copy with offset
-    copied_obj = deep_copy_and_offset(target_obj, OFFSET_X)
-    copied_obj.name = f"{getattr(target_obj, 'name', 'Object')}_Copy"
-    print(f"✓ Created copy with X offset of {OFFSET_X}")
+    copied_obj = deep_copy_and_offset(target_obj, OFFSET_Z)    
+    print(f"✓ Created copy with Z offset of {OFFSET_Z}")
     
     # Add the copy to the elements
     elements = getattr(data, "@elements", None)
@@ -180,7 +179,7 @@ def main():
         projectId=PROJECT_ID,
         modelId=MODEL_ID,
         objectId=object_id,
-        message=f"Duplicated object {TARGET_APPLICATION_ID} with X offset {OFFSET_X}"
+        message=f"Duplicated object {TARGET_APPLICATION_ID} with Z offset {OFFSET_Z}"
     ))
     
     print(f"✓ Created version: {version.id}")

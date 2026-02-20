@@ -7,18 +7,19 @@ using GraphQL and export them with their properties to a JSON file.
 Use this model: https://app.speckle.systems/projects/YOUR_PROJECT_ID/models/YOUR_MODEL_ID
 """
 
-import json
 import os
+import json
 from main import get_client
-from specklepy.transports.server import ServerTransport
 from specklepy.api import operations
 from specklepy.objects.base import Base
+from specklepy.transports.server import ServerTransport
 
 
-# TODO: Replace with your project and model IDs
-PROJECT_ID = "YOUR_PROJECT_ID"
-MODEL_ID = "YOUR_MODEL_ID"
+# Replace with your project and model IDs
 
+PROJECT_ID = "128262a20c"
+
+MODEL_ID = "f9f812034b"
 
 def query_objects_graphql(client, project_id: str, version_id: str) -> dict:
     """
